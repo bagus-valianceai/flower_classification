@@ -1,4 +1,4 @@
-name: air_quality_prediction
+name: mlops_demo
 services:
   api:
     build: 
