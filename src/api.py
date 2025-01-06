@@ -17,10 +17,10 @@ mlflow.set_experiment("Flower Classification")
 model = mlflow.pyfunc.load_model(f"models:/Untouch Logistic Regression@{CHOSEN_MODEL}")
 
 class api_data(BaseModel):
-    x1 : int
-    x2 : int
-    x3 : int
-    x4 : int
+    x1 : float
+    x2 : float
+    x3 : float
+    x4 : float
 
 app = FastAPI()
 
