@@ -36,9 +36,9 @@ jobs:
       run: |
         docker compose build
         docker tag cbagusjk/mlops_demo cbagusjk/mlops_demo:${{ github.ref_name }}
-        docker push
+        docker push cbagusjk/mlops_demo:${{ github.ref_name }}
         docker tag cbagusjk/mlops_demo cbagusjk/mlops_demo:latest
-        docker push
+        docker push cbagusjk/mlops_demo:latest
         
   deploy:
     runs-on: ubuntu-latest
