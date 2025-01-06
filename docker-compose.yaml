@@ -1,0 +1,12 @@
+name: air_quality_prediction
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: cbagusjk/mlops_demo
+    container_name: mlops_demo
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
