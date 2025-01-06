@@ -1,6 +1,9 @@
 import os
+import dotenv
 import mlflow
 import requests
+
+dotenv.load_dotenv(".env")
 
 def test_model_availability():
     # Arrange

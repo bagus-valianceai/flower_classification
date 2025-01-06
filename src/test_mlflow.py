@@ -20,7 +20,7 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(
         X,
         y,
-        test_size = 0.9
+        test_size = 0.92
     )
 
     # EDA
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # Unit test
 
     # Logging MLflow
-    with mlflow.start_run(run_name = "Third run"):
+    with mlflow.start_run(run_name = "fifth run"):
         mlflow.log_params(params)
 
         mlflow.log_metric("accuracy", accuracy)
