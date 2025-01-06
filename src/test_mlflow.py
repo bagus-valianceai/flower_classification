@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # Unit test
 
     # Logging MLflow
-    with mlflow.start_run(run_name = "Third run"):
+    with mlflow.start_run(run_name = "fifth run"):
         mlflow.log_params(params)
 
         mlflow.log_metric("accuracy", accuracy)
