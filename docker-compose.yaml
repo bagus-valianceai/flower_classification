@@ -12,42 +12,42 @@ services:
       - .env
   api-stg-1:
     image: cbagusjk/mlops_demo
-    container_name: mlops_demo
+    container_name: mlops_demo_stg_1
     ports:
       - 8080:8080
     env_file:
       - .env
   api-stg-2:
     image: cbagusjk/mlops_demo
-    container_name: mlops_demo
+    container_name: mlops_demo_stg_2
     ports:
       - 8080:8080
     env_file:
       - .env
   api-stg-3:
     image: cbagusjk/mlops_demo
-    container_name: mlops_demo
+    container_name: mlops_demo_stg_3
     ports:
       - 8080:8080
     env_file:
       - .env
   api-prd-1:
     image: cbagusjk/mlops_demo
-    container_name: mlops_demo
+    container_name: mlops_demo_prd_1
     ports:
       - 8080:8080
     env_file:
       - .env
   api-prd-2:
     image: cbagusjk/mlops_demo
-    container_name: mlops_demo
+    container_name: mlops_demo_prd_2
     ports:
       - 8080:8080
     env_file:
       - .env
   api-prd-3:
     image: cbagusjk/mlops_demo
-    container_name: mlops_demo
+    container_name: mlops_demo_prd_3
     ports:
       - 8080:8080
     env_file:
